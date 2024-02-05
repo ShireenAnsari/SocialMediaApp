@@ -6,8 +6,8 @@ import Posts from './posts'
 const Feed = () => {
   return (
     <Box flex={4} p={2}>
-       <Posts p={'Morning Vibes'} img={"./BilalPost.jpg"}/>
-       <Posts p={'Meet Salar from Abdullahpoor ka devdas'} img={'./Bilalpost2.jpeg'}/>
+       <Posts p={'BreakFast Time'} name={'Alice Joy'} img='https://images.unsplash.com/photo-1551963831-b3b1ca40c98e'/>
+       <Posts p={'Meet Salar from Abdullahpoor ka devdas'} name={'Bilal Abbas Khan'} img={'./Bilalpost2.jpeg'}/>
         </Box>
   )
 }

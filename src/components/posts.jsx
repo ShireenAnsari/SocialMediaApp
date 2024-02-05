@@ -1,13 +1,13 @@
 import React from 'react'
 import { Favorite, FavoriteBorder, MoreVertOutlined, Send } from '@mui/icons-material'
 import { Avatar,Card, CardActionArea, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
-const Posts = ({p,img}) => {
+const Posts = ({p,img,name}) => {
   return (
     <div>
          <Card sx={{marginX:'10'}}>
       <CardHeader 
         avatar={
-          <Avatar src='Bilal.jpeg' aria-label="recipe">
+          <Avatar src={img} aria-label="recipe">
             
           </Avatar>
         }
@@ -16,7 +16,7 @@ const Posts = ({p,img}) => {
             <MoreVertOutlined />
           </IconButton>
         }
-        title="Bilal Abbas Khan"
+        title={name}
         subheader="05 Jan, 2024"
       />
       <CardMedia
