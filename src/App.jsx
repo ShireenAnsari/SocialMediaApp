@@ -5,12 +5,23 @@ import { Box, Stack, createTheme} from "@mui/material"
 import Navbar from "./components/Navbar"
 import { useState } from "react"
 import { ThemeProvider } from '@emotion/react'
+import { purple,green } from "@mui/material/colors"
 function App() {
   const[mode,setmode]=useState('light');
   const darkTheme=createTheme(
     {
       palette:{
         mode:mode
+        ,
+        primary: {
+          main: purple[500],
+        },
+        secondary: {
+          main: green[500],
+        },
+        otherColor:{
+          main: green[500]
+        }
       }
     }
   )
